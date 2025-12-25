@@ -54,3 +54,18 @@ input{width:100%; padding:14px; margin:10px 0 20px; border-radius:10px; border:n
 /* FOOTER */
 footer{text-align:center; padding:50px; color:#64748b;}
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Logo va matn orasidagi bo‘shliq */
+  font-weight: 700;
+  font-size: 22px;
+  color: #16a34a;
+}
+
+.logo-img {
+  width: 40px;  /* Logo o‘lchami */
+  height: 40px;
+}
+
+
