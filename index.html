@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TezYordam — Dark Medical Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Molecular animation background -->
+<div class="molecules">
+  <div class="molecule" style="--x:10vw; --y:20vh;"></div>
+  <div class="molecule" style="--x:70vw; --y:40vh;"></div>
+  <div class="molecule" style="--x:50vw; --y:70vh;"></div>
+  <div class="molecule" style="--x:85vw; --y:15vh;"></div>
+  <div class="molecule" style="--x:20vw; --y:80vh;"></div>
+</div>
+
+<header class="navbar">
+  <div class="logo">TezYordam</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Emergency Medical Help<br>One Tap Away</h1>
+    <p>Real-time connection to the nearest hospital and ambulance with paramedic contact.</p>
+    <button id="emergencyBtn">🚨 Request Help</button>
+  </div>
+  <div class="hero-right">
+    <!-- Ambulance SVG -->
+    <svg width="180" height="180" viewBox="0 0 200 200">
+      <rect x="40" y="60" width="120" height="60" rx="10" fill="#16a34a"/>
+      <circle cx="60" cy="130" r="10" fill="#ffffff"/>
+      <circle cx="140" cy="130" r="10" fill="#ffffff"/>
+      <rect x="80" y="40" width="40" height="20" fill="#22c55e"/>
+    </svg>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="flow">
+  <h2>How it works</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>1. Registration</h3>
+      <p>Enter your phone number for identification.</p>
+    </div>
+    <div class="card">
+      <h3>2. Location Sharing</h3>
+      <p>Your GPS location is automatically sent.</p>
+    </div>
+    <div class="card">
+      <h3>3. Nearest Hospital</h3>
+      <p>The system finds the closest hospital and available ambulance.</p>
+    </div>
+    <div class="card">
+      <h3>4. Live Tracking</h3>
+      <p>Watch the ambulance arrive in real-time.</p>
+    </div>
+    <div class="card">
+      <h3>5. First Aid Contact</h3>
+      <p>Call paramedic for immediate instructions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section class="demo">
+  <h2>Live Demo</h2>
+  <div class="demo-box">
+    <label>Phone number</label>
+    <input type="text" id="phoneInput" placeholder="+998 XX XXX XX XX">
+    <button id="startBtn">Start Emergency</button>
+
+    <p id="statusText">Waiting for request...</p>
+
+    <div class="track">
+      <div class="ambulance">🚑</div>
+    </div>
+
+    <div class="contact" id="contactBox">
+      <h4>Paramedic contact</h4>
+      <p>📞 +998 90 123 45 67</p>
+      <span>Call for first aid guidance</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 TezYordam — Dark Molecular Medical Demo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
